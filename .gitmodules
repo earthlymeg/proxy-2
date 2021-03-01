@@ -1,0 +1,12 @@
+[submodule "reviews-service"]
+	path = reviews-service
+	url = https://github.com/earthlymeg/reviews-service.git
+[submodule "QA_Service"]
+	path = QA_Service
+	url = https://github.com/earthlymeg/QA_Service
+[submodule "related-items-service"]
+	path = related-items-service
+	url = https://github.com/earthlymeg/related-items-service.git
+[submodule "overview_service_v2"]
+	path = overview_service_v2
+	url = https://github.com/earthlymeg/overview_service_v2.git
