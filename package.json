@@ -1,0 +1,26 @@
+{
+  "name": "proxy-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "overview": "(cd overview_service_v2 && npm run start) & (cd overview_service_v2 && npm run react-dev)",
+    "related": "(cd related-items-service && npm run react-dev) & (cd related-items-service && npm run start)",
+    "QA": "(cd QA_Service && npm run start) & (cd QA_Service && npm run start-server)",
+    "reviews": "(cd reviews-service && npm run start) & (cd reviews-service && npm run react-dev)",
+    "proxy": "(cd main-proxy && npm run build-dev) & (cd main-proxy && npm run start)",
+    "build": "npm run overview & npm run related & npm run QA & npm run reviews & npm run proxy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/earthlymeg/proxy-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/earthlymeg/proxy-2/issues"
+  },
+  "homepage": "https://github.com/earthlymeg/proxy-2#readme"
+}
